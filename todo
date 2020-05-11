@@ -1,0 +1,32 @@
+♥ Por qué el css sigue cargando lento?
+    1: Descargar las fuentes.
+    2: Bajar calidad de las imagenes.
+    
+♥ Hacer responsive toda la página
+
+♥ Me falta hacer los content de:
+    3: Read
+
+♥ SIGN IN -Si completás los datos de sign in correctamente, tiene que devolverte a la página principal. 
+♥ SIGN UP - Si completas el formulario, te tiene que aparecer la pag de log in.
+    1:Hacer passport.
+
+    
+♥ BROWSE:
+    1: Poner una barra buscadora (poder buscar por nombre)
+    2: Poner los filtros 
+    3: Poner los favoritos
+
+♥ BLOG: 
+    1: Hacer el paginado de los articles, si apreto en Read more articles. 
+
+ ♥ PASSPORT: 
+    1: Quiero que el isLogged funcione solamente cuando apretás READ MORE en un comic. 
+    O sea para verlo tenes que estar logueado.
+    
+
+
+♥ Hacer comic images 
+  Comic id 
+  Image 
+  

@@ -70,11 +70,17 @@
             padding: 10px 24px;
             text-align: center;
             text-decoration: none;
+            transition: all 0.4s ease 0s;
 
-            .button:hover {
-              box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.918),
-                0 17px 50px 0 rgba(241, 231, 231, 0.959);
-            }
+            &:hover {
+              background: #8b2323;
+              letter-spacing: 0.5px;
+              -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+              -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+              box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+              transition: all 0.4s ease 0s;
+              }
+    
           }
         }
       }

@@ -1,0 +1,101 @@
+.info-content {
+    width: 100%;
+    height: 100%;
+    color: #fafafa;
+
+   
+    .text-and-photo-wrapper {
+        box-sizing: border-box;
+        background-color: #5a1818;
+        box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.75);
+        display: flex;
+        align-items: center;
+        padding: 100px;
+        margin: 90px;
+
+
+        .title-and-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .info-content-title {
+                font-size: 2.5rem;
+                text-align: left;
+            }
+    
+            .info-content-text {
+                font-size: 0.7rem;
+                text-align: justify;
+                width: 90%;
+            }
+        }
+        .iframe {
+            height: 300px;
+            width: 500px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .info-content {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        .info-content-title {
+            font-size: 1.5rem;
+            padding: 0;
+            margin-top: 50px;
+        }
+        .text-and-photo-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .info-content-text {
+                width: 100%;
+                font-size: 0.6rem;
+                margin-bottom: 50px;
+                margin-top: 0px;
+            }
+
+            iframe {
+                height: 200px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .info-content {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        .info-content-title {
+            font-size: 1rem;
+            padding: 0;
+            margin-top: 50px;
+        }
+        .text-and-photo-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .info-content-text {
+                min-width: 250px;
+                font-size: 0.4rem;
+                margin-bottom: 50px;
+                margin-top: 0px;
+            }
+
+            iframe {
+                height: 150px;
+                width: 250px;
+            }
+        }
+    }
+}

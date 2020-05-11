@@ -1,0 +1,44 @@
+.browse-details-content-wrapper{
+    .top-container{
+        height: 250px;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .browse-details-title{
+            color: #fafafa;
+            font-size: 2rem;
+        }
+
+       
+    }
+
+
+
+    
+    .browse-details-comics-wrapper{
+
+     .bottom-container{
+         background-color: red;
+         width: 100%;
+         height: 50px;;
+     }
+     .images-browse-details-wrapper{
+    display: flex;
+    justify-content: right;
+
+         .bottom-info{
+
+         }
+         .browse-details-image{
+             height: 650px;
+             display: flex; 
+    
+         }
+     }
+
+    }
+}

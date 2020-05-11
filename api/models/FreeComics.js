@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const comicsSchema = mongoose.Schema({
+const freeComicsSchema = mongoose.Schema({
     name: {
         type: String
     },
@@ -15,12 +15,8 @@ const comicsSchema = mongoose.Schema({
 
     description: {
         type: String
-    },
-
-    button: {
-        type: String
     }
 })
 
 
-module.exports = mongoose.model('Comics', comicsSchema)
+module.exports = mongoose.model('FreeComics', freeComicsSchema)

@@ -16,7 +16,7 @@ function Home() {
         <div className="home first-article">
 
           <div className="browse">
-            <NavLink className="home-links" to="/browse">
+            <NavLink className="home-links" to="/comics">
               <h2 className="home-title browse-title">Browse</h2>
               <p className="subtitles browse-subtitle"> The full library</p>
             </NavLink>
@@ -25,9 +25,9 @@ function Home() {
 
         <div className="home second-article">
           <div className="read">
-            <NavLink className="home-links" to="/">
+            <NavLink className="home-links" to="/freecomics">
               <h2 className="home-title read-title">Read</h2>
-              <p className="subtitles read-subtitle"> Enjoy our free comic</p>
+              <p className="subtitles read-subtitle"> Enjoy our free comics</p>
             </NavLink>
           </div>
         </div>
@@ -36,7 +36,7 @@ function Home() {
           <div className="blog">
             <NavLink className="home-links" to="./blog">
               <h2 className="home-title blog-title">Blog</h2>
-              <p className="subtitles blog-subtitle">Visit out blog </p>
+              <p className="subtitles blog-subtitle">Visit our blog </p>
             </NavLink>
 
           </div>

@@ -1,34 +1,32 @@
 import React, { useEffect, useState } from "react";
-import "./Blog.scss";
-import {
-    NavLink,
-} from "react-router-dom";
-import ReadMoreReact from 'read-more-react';
+import "./BlogDetails.scss";
 
-function Blog() {
-    const [items, setItems] = useState([]);
+
+function BlogDetails(props) {
+    const [item, setItem] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:3001/blog")
+    const id = props.match.params.id;
+        fetch("http://localhost:3001/blog/" + id)
             .then(res => res.json())
             .then(
                 (result) => {
-                    setItems(result);
+                    setItem(result);
                 },
                 (error) => {
 
                 }
             )
-    }, [])
+    })
 
     return (
         <div className="blog-wrapper">
             <div className="blog-header"></div>
             <main className="main">
                 {
-                    items.map(item => (
+                    item ?
                         <article className="content">
-                           <NavLink className="blog-title" to={"/blog/" + item._id}> {item.title} </NavLink>
+                            <h1 className="blog-title"> {item.title} </h1>
                             <div className="subtitle">{item.sutitle}</div>
                             <div className="image"></div>
                             <div className="article-details">
@@ -37,25 +35,15 @@ function Blog() {
                                 <span>{item.timeOfRead} </span>
                             </div>
                             <div className="text">
-                                {<ReadMoreReact className="readMoreReact"
-                                    text={item.content}
-                                    min={80}
-                                    ideal={100}
-                                    max={200}
-                                    readMoreText ="Keep Reading..." 
-                                />}
+                                {item.content}
                             </div>
-
                         </article>
-                    ))
+                        : <h1>Loading</h1>
                 }
-                <div className="help-box">
-                    <NavLink className="read-all-articles-link" to="/">Read more articles</NavLink>
-                </div>
             </main>
         </div>
     );
 }
 
 
-export default Blog;
+export default BlogDetails;

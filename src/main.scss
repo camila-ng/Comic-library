@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:400,600,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import "./footer.scss";
+
+$red: #8b2323;
+$black: #171717;
+$white: #fafafa;
+
+body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $black;
+  font-family: "Montserrat", sans-serif;
+
+  .header {
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .information {
+      .link {
+        text-decoration: none;
+        font-size: 0.6rem;
+        color: white;
+        margin: 10px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+
+    .sign-up-in {
+      .sign-up {
+        text-align: right;
+        background-color: $red;
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-decoration: none;
+        font-size: 0.7rem;
+        margin: 10px;
+        border-radius: 5px;
+        transition: all 0.4s ease 0s;
+
+        &:hover {
+          background: #8b2323;
+          letter-spacing: 1px;
+          -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+          box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+          transition: all 0.4s ease 0s;
+        }
+      }
+
+      .sign-in {
+        text-decoration: none;
+        font-size: 0.6rem;
+        color: white;
+      }
+    }
+  }
+
+  .title {
+    background-color: $red;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 4px 8px -2px rgba(0, 0, 0, 0.75);
+
+    .page-title {
+      font-size: 8rem;
+      margin: 0 auto;
+      font-family: "Bebas Neue", sans-serif;
+      padding: 0;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow: 1px 0px 0px rgba(0, 0, 0, 1);
+    }
+  }
+  .home {
+    .home-links {
+      text-decoration: none;
+
+      .home-title {
+        color: $white;
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+        text-shadow: 5px 3px 5px rgba(0, 0, 0, 1);
+      }
+
+      .subtitles {
+        color: $white;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    .title {
+      .page-title {
+        font-size: 90px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  body {
+    .title {
+      .page-title {
+        font-size: 130px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    .header {
+      .information {
+        .link {
+          font-size: 10px;
+        }
+      }
+      .sign-up-in {
+        .sign-up {
+          font-size: 10px;
+        }
+        .sign-in {
+          font-size: 10px;
+        }
+      }
+    }
+    .title {
+      .page-title {
+        font-size: 90px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    .header {
+      .information {
+        .link {
+          font-size: 8px;
+        }
+      }
+      .sign-up-in {
+        .sign-up {
+          font-size: 8px;
+        }
+        .sign-in {
+          font-size: 8px;
+        }
+      }
+    }
+    .title {
+      .page-title {
+        font-size: 90px;
+        text-align: center;
+      }
+    }
+  }
+}
