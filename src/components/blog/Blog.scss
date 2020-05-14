@@ -48,9 +48,8 @@
         .image {
           height: 300px;
           width: 100%;
-          background-image: url("../../images/blog-article-image.jpg");
-          background-size: cover;
           background-position: center;
+          object-fit: cover;
         }
 
         .article-details {

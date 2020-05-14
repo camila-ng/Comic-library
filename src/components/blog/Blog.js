@@ -30,7 +30,8 @@ function Blog() {
                         <article className="content">
                            <NavLink className="blog-title" to={"/blog/" + item._id}> {item.title} </NavLink>
                             <div className="subtitle">{item.sutitle}</div>
-                            <div className="image"></div>
+                            <img className="image" src={"data:image/gif;base64," + item.image} alt={item.name} />
+                            
                             <div className="article-details">
                                 <span>{item.author} /</span>
                                 <span>{item.category} /</span>

@@ -23,6 +23,13 @@ body {
     align-items: center;
     justify-content: space-between;
 
+    .user-picture{
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+      border-radius: 3px;
+      object-fit: cover;
+    }
     .information {
       .link {
         text-decoration: none;
@@ -62,8 +69,18 @@ body {
 
       .sign-in {
         text-decoration: none;
-        font-size: 0.6rem;
-        color: white;
+        font-size: 0.7rem;
+        color: #fafafa;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        transition: all 0.4s ease 0s;
+
+        &:hover{
+          transition: all 0.4s ease 0s;
+          letter-spacing: 1px;
+
+        }
       }
     }
   }

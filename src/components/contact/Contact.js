@@ -4,59 +4,51 @@ import {
   NavLink,
 } from "react-router-dom";
 
-function Contact() {
+function Contact(props) {
+
   return (
-    <div className="contact-wrapper">
+    <div className="sign-up-container">
+      <div className="image"></div>
 
-      <div className="title">
-        <h2 className="page-title"> CONTACT </h2>
-      </div>
+      <div className="form">
+        <h2 className="sign-up-title">We are here to help.</h2>
 
-      <div className="contact-form-wrapper">
-        <div className="contact-title">We are here to help.</div>
-
-        <form className="contact-form">
-          <label className="label name-form">
-            Name
-        <br />
-            <input
-              className="input text-input"
-              type="text"
-              name="name"
-              placeholder=""
-            />
-          </label>
-          <br />
-
+        <form className="sign-up-form">
+          <div className="top-form">
           <label className="label username-form">
-            Email
-      <br />
-            <input
-              className="input username-input"
-              type="text"
-              name="email"
-              placeholder=""
-            />
-          </label>
+              Fullname
+                    <br />
+              <input
+                className="input username-input"
+                type="text"
+                name="username"
+                placeholder=""
+              />
+            </label>
 
+            <label className="label username-form">
+              Email
+                    <br />
+              <input
+                className="input username-input"
+                type="text"
+                name="username"
+                placeholder=""
+              />
+            </label>
+          </div>
 
-          <label className="label textarea-label">
-            Message
-      <br />
-              <textarea rows="5" cols="40" className="textarea"
-                name="message">
-              </textarea>
-          </label>
+          <div className="bottom-form">
+         <textarea className="textarea" placeholder="Say something nice..." rows="10" cols="30" wrap="off"></textarea>
+          </div>
 
-
-          <NavLink className="contact-button-link" to="/">
-            <div className="button">Submit</div></NavLink>
+          <NavLink className="button-link" to="/">
+            <div className="button">Contact Us</div></NavLink>
         </form>
       </div>
     </div>
   );
 }
-
 
 
 export default Contact;

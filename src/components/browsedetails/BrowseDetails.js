@@ -32,28 +32,29 @@ function BrowseDetails(props) {
                 <div className="browse-details-comics-wrapper">
                     {
                         item ?
-
                             <div className="images-browse-details-wrapper">
+                            <div className="golis"> 
                                 {images ?
                                     images.map(image => (
                                         <img className="browse-details-image" src={"data:image/gif;base64," + image.image} alt="comic-image3" />
                                     ))
                                     : ""
                                 }
-
+                                </div>
                                 {
-                                    <div className="motherfucking-div"> {item.description}</div>
+                                    <div className="description-wrapper">
+                                        <div className="description-container">
+                                     <h2 className="description-title">{item.name}</h2>
+                                    <div className="description"> {item.description}</div>
+                                    </div>
+                                    <a href={item.button} className="amazon-button" alt="amazon-buy">Buy this comic</a>
+                                    </div>
                                 }
                             </div>
 
                             : <h1>Loading</h1>
                     }
-                    <div className="bottom-container">
-                        
-                    </div>
                 </div>
-
-
             </div>
         </div>
     );
