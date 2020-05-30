@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const comicsSchema = mongoose.Schema({
     name: {
@@ -20,7 +20,7 @@ const comicsSchema = mongoose.Schema({
     button: {
         type: String
     }
-})
+});
 
 
-module.exports = mongoose.model('Comics', comicsSchema)
+module.exports = mongoose.model('Comics', comicsSchema);

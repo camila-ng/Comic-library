@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const freeComicsSchema = mongoose.Schema({
     name: {
@@ -16,7 +16,7 @@ const freeComicsSchema = mongoose.Schema({
     description: {
         type: String
     }
-})
+});
 
 
-module.exports = mongoose.model('FreeComics', freeComicsSchema)
+module.exports = mongoose.model('FreeComics', freeComicsSchema);

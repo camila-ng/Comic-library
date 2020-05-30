@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const comicsImagesSchema = mongoose.Schema({
 
@@ -9,7 +9,7 @@ const comicsImagesSchema = mongoose.Schema({
     comicId: {
         type: String
     }
-})
+});
 
 
-module.exports = mongoose.model('ComicsImages', comicsImagesSchema)
+module.exports = mongoose.model('ComicsImages', comicsImagesSchema);

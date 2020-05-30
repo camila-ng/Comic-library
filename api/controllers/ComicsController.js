@@ -17,8 +17,8 @@ class ComicsControllers {
 
     async getComicsById(req,res){
         const id = req.params.id
-        const comicsId = await this.comicsService.getComicsById(id)
-        return res.json(comicsId)
+        const comic = await this.comicsService.getComicsById(id)
+        return res.json(comic)
     }
 }
 
