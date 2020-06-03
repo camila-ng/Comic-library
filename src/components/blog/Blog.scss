@@ -1,94 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-
 .blog-wrapper {
+  width: 100%;
+  .blog-header {
     width: 100%;
-    .blog-header {
-      width: 100%;
-      min-height: 150px;
-      background-color: #8b2323;
-      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.29);
-    }
+    min-height: 150px;
+    background-color: #8b2323;
+    box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.29);
+  }
 
-    .main {
-      width: 100%;
-      max-width: 600px;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      font-family: "Raleway";
-      border-radius: 5px;
-      margin: 0 auto;
-      margin-top: -70px;
+  .main {
+    width: 100%;
+    max-width: 600px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: -70px;
 
-      .content {
-        margin: 0 0 20px 0;
-        height: 100%;
-        background-color: white;
-        padding: 20px;
-        font-family: "Raleway", sans-serif;
+    .content {
+      margin: 0 0 20px 0;
+      height: 100%;
+      background-color: white;
+      padding: 20px;
+      font-family: "Raleway", sans-serif;
+      text-align: justify;
+
+      .blog-title {
+        font-size: 2rem;
         text-align: justify;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+      }
+      .subtitle {
+        font-size: 0.8rem;
+        margin: 20px;
+        text-align: justify;
+      }
 
+      .image {
+        height: 300px;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+      }
 
-        .blog-title {
-          font-size: 2rem;
-          text-align: justify;
-          margin: 10px;
-          text-decoration: none;
-          color: black;
-          display: inline-block;
-        
-        }
-        .subtitle {
-          font-size: 0.8rem;
-          margin: 20px;
-          text-align: justify;
-        }
+      .article-details {
+        color: grey;
+        font-size: 0.6rem;
+        text-align: right;
+        margin: 20px;
+      }
 
-        .image {
-          height: 300px;
-          width: 100%;
-          background-position: center;
-          object-fit: cover;
-        }
+      .text {
+        margin: 20px;
+        font-size: 0.8rem;
+        text-align: justify;
+        line-height: 1.5;
 
-        .article-details {
-          color: grey;
-          font-size: 0.6rem;
-          text-align: right;
-          margin: 20px;
-        }
-
-        .text {
-          margin: 20px;
-          font-size: 0.8rem;
-          text-align: justify;
-          line-height: 1.5;
-
-          .read-more-button{
-            color: rgb(60, 162, 245);
-            text-decoration: underline;
-          }
+        .read-more-button {
+          color: rgb(60, 162, 245);
+          text-decoration: underline;
         }
       }
-      .help-box {
-        background-color: #8b2323;
-        width: 100%;
-        height: 50px;
-        font-family: "Raleway";
-        border-radius: 5px;
-        display: flex;
+    }
+    .help-box {
+      background-color: #8b2323;
+      width: 100%;
+      height: 50px;
+      font-family: "Raleway";
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      .read-all-articles-link {
+        font-size: 0.8rem;
+        text-decoration: underline;
+        color: rgb(228, 228, 228);
+        align-items: center;
         justify-content: center;
-        margin-bottom: 10px;
-        
-        .read-all-articles-link {
-          font-size: 0.8rem;
-          text-decoration: underline;
-          color: rgb(228, 228, 228);
-          align-items: center;
-          justify-content: center;
-          display: flex;
-        }
+        display: flex;
       }
     }
   }
+}

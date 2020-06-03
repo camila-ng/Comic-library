@@ -17,13 +17,9 @@ import { Auth0Context } from './contexts/auth0-context';
 
 function Main(props) {
     const { isLoading, user, loginWithRedirect } = useContext(Auth0Context);
-   
+
     return (
-
-        
-
         <HashRouter>
-           
             <div className="header">
                 <div className="information">
                     <NavLink className="link home" exact to="/"> Home</NavLink>
@@ -32,29 +28,25 @@ function Main(props) {
                 </div>
 
                 {!isLoading && !user && (
-            <>
-             <div className="sign-up-in">
-                    <button onClick={loginWithRedirect} className="button sign-in">
-                        Sign In
+                    <>
+                        <div className="sign-up-in">
+                            <button onClick={loginWithRedirect} className="button sign-in">
+                                Sign In
                      </button>
-
-                    <button onClick={loginWithRedirect} className="button sign-up">
-                        Sign Up
+                            <button onClick={loginWithRedirect} className="button sign-up">
+                                Sign Up
                      </button>
-                     
-                </div>
-            </>
-          )}
-          {!isLoading && user && (
-            <>
-              <p className="user-name">Hello {user.name}</p>
-              {user.picture && <img src={user.picture} alt="My Avatar" className="user-picture" />}
-            </>
-          )}
-          
+                        </div>
+                    </>
+                )}
+                {!isLoading && user && (
+                    <>
+                        <p className="user-name">Hello {user.name}</p>
+                        {user.picture && <img src={user.picture} alt="My Avatar" className="user-picture" />}
+                    </>
+                )}
             </div>
-
-
+            
             <div className="content-wrapper">
                 <Route exact path="/" component={Home} />
                 <Route exact path="/blog" component={Blog} />

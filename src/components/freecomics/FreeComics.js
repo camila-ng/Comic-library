@@ -49,8 +49,8 @@ function FreeComics() {
                     ))
                 }
 
-                <div className="content-title"><h2 className="free-comics-title">.</h2>
-                    <h3 className="free-comics-subtitle">.</h3>
+                <div className="free-comic-footer">
+                
                 </div>
 
             </div>

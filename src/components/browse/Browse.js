@@ -43,9 +43,9 @@ function Browse() {
                             <div className=" comic-wrapper">
                                 <NavLink className="comic-container" to={"/comics/" + item._id}>
                                         <img className="comic-image" src={"data:image/gif;base64," + item.image} alt={item.name} />
-                                        <div className="button ">
+                                        <div className="button">
                                         </div>
-                                    <div className="comic-description ">{item.name}</div>
+                                    <div className="comic-description">{item.name}</div>
                                 </NavLink>
                             </div>
                         ))

@@ -1,5 +1,5 @@
-const Comics = require('../models/Comics')
-const ComicsImages = require('../models/ComicsImages')
+const Comics = require('../models/Comics');
+const ComicsImages = require('../models/ComicsImages');
 
 class ComicsService{
 constructor(){ 
@@ -12,12 +12,14 @@ getComics(page){
     return comics
     }   
 
+//not used by react 
 postComics(body){
+    //Creates Comics model.
     const comicsPost = new Comics(body.comic);
-    
+
     const result = comicsPost.save((err, data) => {
+        const id = data._id.toString();
         for(let i= 0; i < body.imagesarray.length; i++){
-            const id = data._id.toString();
 
             let image = body.imagesarray[i];
             image.comicId = id;
@@ -28,7 +30,7 @@ postComics(body){
     });
 
     return result;
-    }
+}
 
 async getComicsById(id) {
     let result = {
@@ -47,7 +49,5 @@ async getComicsById(id) {
     return result;
     }
 }
-
-
 
 module.exports = ComicsService; 

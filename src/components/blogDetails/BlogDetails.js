@@ -3,10 +3,10 @@ import "./BlogDetails.scss";
 
 
 function BlogDetails(props) {
-    const [item, setItem] = useState();
+    const [item, setItem] = useState(props.match.params.id);
+    const id = props.match.params.id;
 
     useEffect(() => {
-    const id = props.match.params.id;
         fetch("http://localhost:3001/blog/" + id)
             .then(res => res.json())
             .then(
@@ -17,7 +17,9 @@ function BlogDetails(props) {
 
                 }
             )
-    })
+    }, [id]);
+   
+    
 
     return (
         <div className="blog-wrapper">
@@ -28,7 +30,7 @@ function BlogDetails(props) {
                         <article className="content">
                             <h1 className="blog-title"> {item.title} </h1>
                             <div className="subtitle">{item.sutitle}</div>
-                            <div className="image"></div>
+                            <img className="image" src={"data:image/gif;base64," + item.image} alt={item.name} />
                             <div className="article-details">
                                 <span>{item.author} /</span>
                                 <span>{item.category} /</span>

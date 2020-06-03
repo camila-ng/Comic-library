@@ -84,24 +84,22 @@
 @media (max-width: 700px) {
   .footer {
     .footer-container {
-      .top-container{
+      .top-container {
         display: flex;
         flex-direction: column;
         text-align: center;
-
       }
-      .bottom-container{
-         display: flex;
+      .bottom-container {
+        display: flex;
         flex-direction: column;
         margin-bottom: 10px;
         justify-content: center;
 
-        .footer-title{
+        .footer-title {
           justify-content: center;
           display: flex;
-
         }
-        .footer-links{
+        .footer-links {
           display: flex;
           justify-content: center;
         }

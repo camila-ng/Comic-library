@@ -3,7 +3,9 @@ import "./BrowseDetails.scss";
 
 
 function BrowseDetails(props) {
+    //get comic id from route. 
     const [comicId, setComicId] = useState(props.match.params.id);
+    
     const [item, setItem] = useState();
     const [images, setImages] = useState([]);
 
@@ -18,6 +20,7 @@ function BrowseDetails(props) {
     useEffect(() => {
         getData();
     }, [comicId])
+    
     return (
         <div className="browser-wrapper">
             <div className="title">
@@ -27,7 +30,7 @@ function BrowseDetails(props) {
             <div className="browse-details-content-wrapper">
 
                 <div className="top-container">
-                    <h1 className="browse-details-title">The Comic You Choose</h1>
+                    <h1 className="browse-details-title">Buy your favorite comic</h1>
                 </div>
                 <div className="browse-details-comics-wrapper">
                     {

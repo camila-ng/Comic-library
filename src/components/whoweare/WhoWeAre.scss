@@ -1,37 +1,35 @@
-
 .wrapper {
+  display: flex;
+  font-family: "Montserrat", serif;
+  color: white;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  .image {
+    background-image: url("../../images/sign-in.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 40%;
+  }
+
+  .form {
+    height: 100vh;
+    width: 60%;
     display: flex;
-    font-family: "Montserrat", serif;
-    color: white;
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-      1px 1px 1px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-    .image {
-      background-image: url("../../images/sign-in.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
-      height: 100vh;
-      width: 40%;
+    .sign-in-title {
+      color: white;
     }
-
-    .form {
-      height: 100vh;
-      width: 60%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      .sign-in-title {
-        color: white;
-      }
-      .whoweare-description{
+    .whoweare-description {
       font-size: 0.6rem;
       width: 50%;
       text-align: justify;
       margin: 10px;
-} 
     }
   }
+}
