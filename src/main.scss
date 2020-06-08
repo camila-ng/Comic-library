@@ -133,16 +133,21 @@ body {
   body {
     .header {
       .information {
+        display: flex;
         .link {
           font-size: 10px;
         }
       }
       .sign-up-in {
+        padding: 0px;
         .sign-up {
           font-size: 10px;
+
         }
         .sign-in {
           font-size: 10px;
+          margin-left: 20px;
+
         }
       }
     }
