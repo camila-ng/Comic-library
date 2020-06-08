@@ -82,18 +82,10 @@ function Main(props) {
                     <div className="bottom-container">
                         <h2 className="footer-title">The Comic Library</h2>
                         <div className="footer-links">
-                            <NavLink className="about" to="/">About - </NavLink>
-                            <NavLink className="help" to="/"> Help - </NavLink>
-                            <NavLink className="legal" to="/"> Legal </NavLink>
+                            <NavLink className="about" to="/">About  - </NavLink>
+                            <NavLink className="help" to="/">  Help  - </NavLink>
+                            <NavLink className="legal" to="/">  Legal </NavLink>
                         </div>
-                    </div>
-
-                    <div className="social-media">
-                        <NavLink className="social-media-links" to="/">
-                            <i className="fa fa-facebook"> </i>
-                            <i className="fa fa-twitter"> </i>
-                            <i className="fa fa-instagram"> </i>
-                        </NavLink>
                     </div>
                 </div>
             </div>

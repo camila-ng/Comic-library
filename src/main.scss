@@ -31,13 +31,13 @@ body {
       object-fit: cover;
     }
     .information {
+    padding: 20px;
       .link {
         text-decoration: none;
         font-size: 0.6rem;
         color: white;
         margin: 10px;
         transition: all 0.3s ease 0s;
-
         &:hover {
           color: $red;
         }
@@ -45,6 +45,8 @@ body {
     }
 
     .sign-up-in {
+      padding: 20px;
+
       .sign-up {
         text-align: right;
         background-color: $red;
