@@ -37,12 +37,10 @@ function Home() {
               <h2 className="home-title blog-title">Blog</h2>
               <p className="subtitles blog-subtitle">Visit our blog </p>
             </NavLink>
-
           </div>
         </div>
-
       </div>
-      </div>
+  </div>
     );
   }
 

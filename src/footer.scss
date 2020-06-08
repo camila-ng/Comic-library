@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+
 .footer {
   width: 100%;
   max-height: 100vh;
   background-color: #050505;
-  font-family: "Montserrat", sans-serif;
   text-shadow: none;
-
+  
   .footer-container {
-    color: rgb(87, 87, 87);
     display: flex;
     flex-direction: column;
     padding: 120px;
@@ -14,21 +15,25 @@
     .top-container {
       display: flex;
       justify-content: space-between;
-      text-align: left;
+      font-family: "bebas neue", "sans serif";
+      letter-spacing: 0.5px;
 
       .container-information {
         margin-bottom: 10px;
 
         .info-title {
-          font-size: 1rem;
-          display: inline;
-          font-weight: bold;
+          font-size: 1.2rem;
           text-decoration: none;
-          color: rgb(240, 240, 240);
+          color: rgba(240, 240, 240, 0.973);
         }
 
         .info-subtitle {
-          font-size: 0.6rem;
+          margin-top: 0;
+          font-weight: 500;
+          font-size: 0.5rem;
+          font-family: "Montserrat", sans-serif;
+          color: rgb(116, 116, 116);
+
         }
       }
     }
@@ -45,14 +50,21 @@
       justify-content: flex-end;
       flex-direction: column;
       align-items: flex-end;
+      font-weight: lighter;
+
       .footer-title {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
+        font-family: "bebas neue", "sans serif";
+        font-size: 2.5rem;
+        margin-bottom: 0px;
         color: rgb(250, 250, 250);
+        font-style: italic;
+        letter-spacing: 0.5px;
+        font-weight: lighter;
       }
       .footer-links {
         text-decoration: none;
         font-size: 0.5rem;
+        
         .about {
           text-decoration: none;
           color: rgba(231, 231, 231, 0.548);

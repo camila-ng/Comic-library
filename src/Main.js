@@ -63,7 +63,7 @@ function Main(props) {
                     <div className="top-container">
                         <div className="container-information">
                             <NavLink className="info-title" to="/" >Discover the library.</NavLink>
-                            <h3 className="info-subtitle">Enjoy the biggest Marvel's comic library</h3>
+                            <h3 className="info-subtitle">Enjoy the biggest Marvel's comic library.</h3>
                         </div>
 
                         <div className="container-information">
