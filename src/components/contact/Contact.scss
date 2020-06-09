@@ -1,4 +1,4 @@
-.sign-up-container {
+.contact-container {
   display: flex;
   font-family: "Montserrat", serif;
   color: white;
@@ -22,16 +22,18 @@
     align-items: center;
     flex-direction: column;
 
-    .sign-up-title {
+    .contact-title {
       color: white;
     }
 
-    .sign-up-form {
+    .contact-form {
       width: 400px;
       height: 400px;
+
       .top-form {
         display: flex;
         flex-direction: column;
+
         .label {
           font-size: 0.7rem;
           width: 100%;
@@ -81,6 +83,69 @@
 
           .button:hover {
             box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.918), 0 17px 50px 0 rgba(241, 231, 231, 0.959);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .image {
+      width: 100%;
+    }
+
+    .form {
+      width: 100%;
+
+      .contact-form {
+        .top-form {
+          padding: 30px;
+        }
+
+        .bottom-form {
+          .textarea {
+            padding: 30px;
+            width: 50%;
+            height: 10px;
+            resize: none;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .image {
+      width: 100%;
+    }
+
+    .form {
+      width: 100%;
+
+      .contact-form {
+        width: 100%;
+        .top-form {
+          padding: 50px;
+        }
+
+        .bottom-form {
+          .textarea {
+            padding: 50px;
+            width: 50%;
+            height: 10px;
+            resize: none;
+            margin: 0;
           }
         }
       }

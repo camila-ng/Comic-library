@@ -7,13 +7,13 @@ import {
 function Contact(props) {
 
   return (
-    <div className="sign-up-container">
+    <div className="contact-container">
       <div className="image"></div>
 
       <div className="form">
-        <h2 className="sign-up-title">We are here to help.</h2>
+        <h2 className="contact-title">We are here to help.</h2>
 
-        <form className="sign-up-form">
+        <form className="contact-form">
           <div className="top-form">
           <label className="label username-form">
               Fullname
