@@ -3,7 +3,7 @@
   font-family: "Montserrat", serif;
   color: white;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
-
+  align-items: center;
   .image {
     background-image: url("../../images/sign-in.jpg");
     background-position: center;
@@ -15,12 +15,13 @@
   }
 
   .form {
-    height: 100vh;
+    // margin-top: 100px;
+    height: 100%;
     width: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    justify-content: center;
     .sign-in-title {
       color: white;
     }

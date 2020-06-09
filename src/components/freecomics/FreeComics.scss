@@ -98,6 +98,11 @@
                 .free-comics-description{
                     width: 100%;
                 }
+
+                .read-full-comic-link {
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
             }
 
         .free-comics-img {
@@ -110,7 +115,8 @@
                 background-position: center;
             }
         }
+       
+        }
     }
 }
-    }
-
+    
