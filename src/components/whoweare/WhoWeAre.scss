@@ -18,18 +18,46 @@
     height: 100vh;
     width: 60%;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     flex-direction: column;
 
     .sign-in-title {
       color: white;
     }
-    .whoweare-description {
-      font-size: 0.6rem;
-      width: 50%;
-      text-align: justify;
-      margin: 10px;
+    .description-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+      .whoweare-description {
+        font-size: 0.6rem;
+        width: 50%;
+        text-align: justify;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    .image {
+      width: 100%;
+      background-position: center;
+    }
+    .form {
+      width: 100%;
+      height: 50%;
+      .description-wrapper {
+        padding: 30px;
+        .whoweare-description {
+          width: 100%;
+        }
+      }
     }
   }
 }
