@@ -62,12 +62,12 @@ function Main(props) {
                 <div className="footer-container">
                     <div className="top-container">
                         <div className="container-information">
-                            <NavLink className="info-title" to="/" >Discover the library.</NavLink>
+                            <NavLink className="info-title" to="/comics" >Discover the library.</NavLink>
                             <h3 className="info-subtitle">Enjoy the biggest Marvel's comic library.</h3>
                         </div>
 
                         <div className="container-information">
-                            <NavLink className="info-title" to="/">The perfect selection.</NavLink>
+                            <NavLink className="info-title" to="/freecomics">The perfect selection.</NavLink>
                             <h3 className="info-subtitle">Download the weekly free comic. </h3>
                         </div>
 

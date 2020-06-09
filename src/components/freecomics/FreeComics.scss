@@ -26,6 +26,7 @@
         box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.75);
 
         .free-comics-info {
+            width: 50%;
             color: #fafafa;
             margin: 0px;
             .free-comics-title {
@@ -60,6 +61,8 @@
         }
 
         .free-comics-img {
+            width: 50%;
+            overflow: hidden;
             .free-comics-image {
                 width: 600px;
                 height: 500px;
@@ -72,3 +75,42 @@
         height: 150px;
     }
 }
+
+@media (max-width: 700px) {
+    .free-comics-wrapper {
+       width: 100%;
+       margin: 0;
+    .free-comics-top-content {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        .free-comics-info {
+            text-align: center;
+            width: 90%;
+            .free-comics-title {
+                font-size: 1.9rem;
+                margin-bottom: 5px;
+            }
+                .free-comics-description{
+                    width: 100%;
+                }
+            }
+
+        .free-comics-img {
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+
+            .free-comics-image {
+                object-fit:contain;
+                background-position: center;
+            }
+        }
+    }
+}
+    }
+
